@@ -8,7 +8,12 @@ var mailPresente = false;
 for (var i = 0; i < mailDatabase.length; i++){
   if (mailUtente == mailDatabase[i]){
     mailPresente = true;
-    alert('Mail presente nel database');
   }
 }
+if (mailPresente == true){
+  alert('Benvenuto nel sito');
+}else {
+  alert('Accesso non autorizzato!')
+}
+
 console.log(mailPresente);
